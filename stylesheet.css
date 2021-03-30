@@ -80,18 +80,20 @@ a {
   margin-right: 5px;
 }
 
-header {
-  height: 65px;
+.header {
   width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
+  background-color: lightblue;
+  text-align: center;
+ 
+  font-size: large;
+ 
+
 }
 
-.logo {
+#header-logo {
   width: 124px;
   margin-top: 20px;
+  text-align: center;
 }
 
 .header-left {
@@ -115,13 +117,19 @@ header {
 .header-right a:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-
+.header-list{
+  text-align: center;
+  
+}
 .menu-icon{
   color: white;
   float: right;
   font-size: 25px;
   padding: 21px 0;
   display: none;
+}
+.contents{
+  display: inline;
 }
 
 .lesson-wrapper {
@@ -164,6 +172,7 @@ header {
   margin-top: 15px;
   font-size: 15px;
   color: #b3aeb5;
+  display: inline-block;
 }
 
 .heading h3 {
@@ -201,4 +210,23 @@ footer p {
 footer {
   padding-top: 30px;
   padding-bottom: 20px;
+}
+.main{
+  
+  text-align: center;
+}
+.contents-item{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.contents::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.contents-item > img{
+  border: black;
+  border-radius: 8px;
+  box-shadow: 5px 5px rgb(204, 195, 195);
 }
